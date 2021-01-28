@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CTCDIY 0.1</title>
+    <meta name="description" content="CTCDIY" />
+    <meta name="author" content="TriMill" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onresize="on_resize()">
+    <script src="main.js"></script>
+	<div class="topbar">
+		<span class="topitem toptitle">CTCDIY</span>
+		<a class="topitem toplink" href="https://trimill.github.io/ctcdiy">Home</a>
+		<a class="topitem toplink" href="https://trimill.github.io/ctcdiy/puzzles">Puzzles</a>
+	</div>
+	<div class="title" id="title">CTCDIY</div>
+	<div class="main">
+		<div class="top">
+			<div class="board">
+				<canvas id="boardcanvas"></canvas>
+			</div>
+			<p class="description" id="description">
+			</p>
+		</div>
+		<div class="controls">
+			<!--
+			<span>
+				<input type="button" id="reset" value="Clear"/>
+				<input type="button" id="undo" value="Undo"/>
+				<input type="button" id="redo" value="Redo"/>
+			</span>
+			-->
+			<span>
+				<input type="text" id="loadurl" />
+				<input type="button" id="loadurl_button" value="Load from URL"/>
+			</span>
+			<span style="font-size: 13pt;">
+				Upload file: 
+				<input type="file" id="upload" />
+			</span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		grid_layer = document.createElement("canvas");
+		select_layer = document.createElement("canvas");
+		digit_layer = document.createElement("canvas");
+		pencilmark_layer = document.createElement("canvas");
+		highlight_layer = document.createElement("canvas");
+		let canvas = document.getElementById("boardcanvas");
+		canvas.addEventListener("mousedown", on_mouse_down, false);
+		canvas.addEventListener("mouseup", on_mouse_up, false);
+		canvas.addEventListener("mousemove", on_mouse_move, false);
+		canvas.getContext("2d").imageSmoothingQuality = "high";
+		document.addEventListener("keydown", on_keydown);
+		document.getElementById("loadurl_button").addEventListener("click", on_load_from_url);
+		document.getElementById("loadurl").value = "";
+		document.getElementById("upload").addEventListener("change", on_load_from_upload);
+		load_from_json('{"board":"sudoku", "description":"Upload a puzzle using the upload button, or load one from a URL"}')
+		on_resize();
+	</script>
+  </body>
+</html>

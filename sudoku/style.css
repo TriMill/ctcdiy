@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.topbar {
+	height: 60px;
+	width: 100%;
+	background: #1E8E3E;
+	line-height: 57px;
+}
+
+.topitem {
+	margin: 0 50px 0 50px;
+	padding: 10px 10px 10px 10px;
+}
+
+.toptitle {
+	font-size: 20pt;
+	font-family: 'Roboto Slab', serif;
+	color: #fff;
+}
+
+.toplink {
+	font-size: 15pt;
+	text-decoration: none;
+	color: #fff;
+}
+.toplink:hover { background: #1b7e37; }
+.toplink:active { background: #1b7e37; }
+
+.main {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	font-size: 16pt;
+}
+
+.top {
+	display: flex;
+
+}
+
+.board {
+	padding: 5px;
+	flex: 3 1 100%;
+}
+
+.description {
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 4px;
+	margin: 10px;
+	flex: 1 1 100%;
+}
+
+.controls {
+	display: flex;
+	flex-direction: column;
+}
+
+code {
+	font-size: 13pt;
+	background: #eee;
+	padding: 2px;
+	border-radius: 3px;
+}
+
+input {
+	font-size: 13pt;
+	background: #eee;
+	margin: 3px;
+	border-radius: 3px;
+}
+
+.title {
+	font-size: 32pt;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	padding: 30px 5px 5px 5px;
+}

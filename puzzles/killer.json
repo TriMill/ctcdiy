@@ -1,0 +1,186 @@
+{
+	"title": "Killer Sudoku",
+	"description": "Standard rules apply. The digits in each cage must sum to the number in the top-left corner. Digits cannot repeat in cages. <a href=\"https://www.youtube.com/watch?v=QRM4T8dq9oc\">From CTC</a>",
+	"board": "sudoku",
+	"decorations": [
+		{"type": "killercage", "path": [
+			{"pos":[0,0],"offset":"se"},
+			{"pos":[2,0],"offset":"sw"},
+			{"pos":[2,1],"offset":"nw"},
+			{"pos":[1,1],"offset":"nw"},
+			{"pos":[1,4],"offset":"nw"},
+			{"pos":[0,4],"offset":"ne"}
+		], "value": 20},
+		{"type": "killercage", "path": [
+			{"pos":[2,0],"offset":"se"},
+			{"pos":[4,0],"offset":"sw"},
+			{"pos":[4,1],"offset":"nw"},
+			{"pos":[2,1],"offset":"ne"}
+		], "value": 14},
+		{"type": "killercage", "path": [
+			{"pos":[5,0],"offset":"se"},
+			{"pos":[7,0],"offset":"sw"},
+			{"pos":[7,1],"offset":"nw"},
+			{"pos":[5,1],"offset":"ne"}
+		], "value": 10},
+		{"type": "killercage", "path": [
+			{"pos":[7,0],"offset":"se"},
+			{"pos":[9,0],"offset":"sw"},
+			{"pos":[9,4],"offset":"nw"},
+			{"pos":[8,4],"offset":"ne"},
+			{"pos":[8,1],"offset":"ne"},
+			{"pos":[7,1],"offset":"ne"}
+		], "value": 20},
+		{"type": "killercage", "path": [
+			{"pos":[1,1],"offset":"se"},
+			{"pos":[2,1],"offset":"sw"},
+			{"pos":[2,3],"offset":"nw"},
+			{"pos":[1,3],"offset":"ne"}
+		], "value": 11},
+		{"type": "killercage", "path": [
+			{"pos":[2,1],"offset":"se"},
+			{"pos":[7,1],"offset":"sw"},
+			{"pos":[7,2],"offset":"nw"},
+			{"pos":[2,2],"offset":"ne"}
+		], "value": 21},
+		{"type": "killercage", "path": [
+			{"pos":[7,1],"offset":"se"},
+			{"pos":[8,1],"offset":"sw"},
+			{"pos":[8,3],"offset":"nw"},
+			{"pos":[7,3],"offset":"ne"}
+		], "value": 13},
+		{"type": "killercage", "path": [
+			{"pos":[2,2],"offset":"se"},
+			{"pos":[4,2],"offset":"sw"},
+			{"pos":[4,4],"offset":"nw"},
+			{"pos":[3,4],"offset":"ne"},
+			{"pos":[3,3],"offset":"ne"},
+			{"pos":[2,3],"offset":"ne"}
+		], "value": 20},
+		{"type": "killercage", "path": [
+			{"pos":[4,2],"offset":"se"},
+			{"pos":[5,2],"offset":"sw"},
+			{"pos":[5,4],"offset":"nw"},
+			{"pos":[4,4],"offset":"ne"}
+		], "value": 12},
+		{"type": "killercage", "path": [
+			{"pos":[5,2],"offset":"se"},
+			{"pos":[7,2],"offset":"sw"},
+			{"pos":[7,3],"offset":"nw"},
+			{"pos":[6,3],"offset":"nw"},
+			{"pos":[6,4],"offset":"nw"},
+			{"pos":[5,4],"offset":"ne"}
+		], "value": 12},
+		{"type": "killercage", "path": [
+			{"pos":[1,3],"offset":"se"},
+			{"pos":[3,3],"offset":"sw"},
+			{"pos":[3,4],"offset":"nw"},
+			{"pos":[2,4],"offset":"nw"},
+			{"pos":[2,5],"offset":"sw"},
+			{"pos":[3,5],"offset":"sw"},
+			{"pos":[3,6],"offset":"nw"},
+			{"pos":[1,6],"offset":"ne"}
+		], "value": 27},
+		{"type": "killercage", "path": [
+			{"pos":[6,3],"offset":"se"},
+			{"pos":[8,3],"offset":"sw"},
+			{"pos":[8,6],"offset":"nw"},
+			{"pos":[6,6],"offset":"ne"},
+			{"pos":[6,5],"offset":"se"},
+			{"pos":[7,5],"offset":"se"},
+			{"pos":[7,4],"offset":"ne"},
+			{"pos":[6,4],"offset":"ne"}
+		], "value": 27},
+		{"type": "killercage", "path": [
+			{"pos":[2,4],"offset":"se"},
+			{"pos":[4,4],"offset":"sw"},
+			{"pos":[4,5],"offset":"nw"},
+			{"pos":[2,5],"offset":"ne"}
+		], "value": 9},
+		{"type": "killercage", "path": [
+			{"pos":[5,4],"offset":"se"},
+			{"pos":[7,4],"offset":"sw"},
+			{"pos":[7,5],"offset":"nw"},
+			{"pos":[5,5],"offset":"ne"}
+		], "value": 10},
+		{"type": "killercage", "path": [
+			{"pos":[3,5],"offset":"se"},
+			{"pos":[4,5],"offset":"sw"},
+			{"pos":[4,7],"offset":"nw"},
+			{"pos":[2,7],"offset":"ne"},
+			{"pos":[2,6],"offset":"se"},
+			{"pos":[3,6],"offset":"se"}
+		], "value": 8},
+		{"type": "killercage", "path": [
+			{"pos":[4,5],"offset":"se"},
+			{"pos":[5,5],"offset":"sw"},
+			{"pos":[5,7],"offset":"nw"},
+			{"pos":[4,7],"offset":"ne"}
+		], "value": 16},
+		{"type": "killercage", "path": [
+			{"pos":[5,5],"offset":"se"},
+			{"pos":[6,5],"offset":"sw"},
+			{"pos":[6,6],"offset":"sw"},
+			{"pos":[7,6],"offset":"sw"},
+			{"pos":[7,7],"offset":"nw"},
+			{"pos":[5,7],"offset":"ne"}
+		], "value": 14},
+		{"type": "killercage", "path": [
+			{"pos":[0,5],"offset":"se"},
+			{"pos":[1,5],"offset":"sw"},
+			{"pos":[1,8],"offset":"sw"},
+			{"pos":[2,8],"offset":"sw"},
+			{"pos":[2,9],"offset":"nw"},
+			{"pos":[0,9],"offset":"ne"}
+		], "value": 20},
+		{"type": "killercage", "path": [
+			{"pos":[1,6],"offset":"se"},
+			{"pos":[2,6],"offset":"sw"},
+			{"pos":[2,8],"offset":"nw"},
+			{"pos":[1,8],"offset":"ne"}
+		], "value": 11},
+		{"type": "killercage", "path": [
+			{"pos":[7,6],"offset":"se"},
+			{"pos":[8,6],"offset":"sw"},
+			{"pos":[8,8],"offset":"nw"},
+			{"pos":[7,8],"offset":"ne"}
+		], "value": 13},
+		{"type": "killercage", "path": [
+			{"pos":[8,5],"offset":"se"},
+			{"pos":[9,5],"offset":"sw"},
+			{"pos":[9,9],"offset":"nw"},
+			{"pos":[7,9],"offset":"ne"},
+			{"pos":[7,8],"offset":"se"},
+			{"pos":[8,8],"offset":"se"}
+		], "value": 19},
+		{"type": "killercage", "path": [
+			{"pos":[2,7],"offset":"se"},
+			{"pos":[7,7],"offset":"sw"},
+			{"pos":[7,8],"offset":"nw"},
+			{"pos":[2,8],"offset":"ne"}
+		], "value": 23},
+		{"type": "killercage", "path": [
+			{"pos":[2,8],"offset":"se"},
+			{"pos":[4,8],"offset":"sw"},
+			{"pos":[4,9],"offset":"nw"},
+			{"pos":[2,9],"offset":"ne"}
+		], "value": 13},
+		{"type": "killercage", "path": [
+			{"pos":[5,8],"offset":"se"},
+			{"pos":[7,8],"offset":"sw"},
+			{"pos":[7,9],"offset":"nw"},
+			{"pos":[5,9],"offset":"ne"}
+		], "value": 13}
+	],
+	"givens": [
+		0,0,0,0,5,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,
+		8,0,0,0,0,0,0,0,9,
+		0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,
+		0,0,0,0,6,0,0,0,0
+	]
+}
