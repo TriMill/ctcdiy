@@ -178,7 +178,10 @@ function on_resize() {
 }
 
 function load_from_json(json) {
-	let res = JSON.parse(json);
+	let res = json;
+	if (!res.board) {
+		res = JSON.parse(json);
+	}
 	if (res == null || res == undefined) {
 		alert("Error loading puzzle from file");
 		return
@@ -316,7 +319,6 @@ function on_mouse_move(event) {
 		let x = event.pageX - event.target.offsetLeft;
 		let y = event.pageY - event.target.offsetTop;
 		let [cx, cy] = canvas2cell(x, y);
-		//console.log(selected.indexOf([cx,cy]));
 		select_cell(cx, cy, "add");
 		redraw_select();
 		redraw();
@@ -372,10 +374,16 @@ function on_keydown(event) {
 		event.preventDefault();
 	}
 	if (event.keyCode >= 49 && event.keyCode <= 57) {
+		if (selected.length == 0) {
+			return
+		}
 		let n = event.keyCode - 48;
 		on_number(n, event.shiftKey, event.ctrlKey, event.altKey);
 		event.preventDefault();
 	} else if (event.keyCode == 8 || event.keyCode == 46 || event.keyCode == 32) {
+		if (selected.length == 0) {
+			return
+		}
 		on_number(undefined, false, false, event.altKey);
 		event.preventDefault();
 	} else if (event.keyCode >= 37 && event.keyCode <= 40) {
@@ -396,12 +404,15 @@ function on_keydown(event) {
 		}
 		event.preventDefault();
 	} else if (event.keyCode == 27) {
+		if (selected.length == 0) {
+			return
+		}
 		selected = [];
 		redraw_select();
 		redraw();
 		event.preventDefault();
 	} else {
-		console.log(event);
+		//console.log(event);
 	}
 }
 
@@ -488,7 +499,6 @@ function on_load_from_upload(event) {
 		alert("Error uploading file");
 	}
 	reader.readAsText(file);
-	console.log(event);
 }
 
 function offset_to_coords(offset) {
